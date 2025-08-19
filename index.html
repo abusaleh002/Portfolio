@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Abu Saleh • Data Scientist & Analyst</title>
   <meta name="description" content="Abu Saleh — Data Scientist & Analyst. Machine Learning • Business Intelligence • Cloud Analytics." />
+  <meta name="keywords" content="Abu Saleh, Data Scientist, Data Analyst, Machine Learning, Power BI, Python, AWS, SQL, D3.js, Forecasting" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -19,8 +20,8 @@
       <nav class="menu">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <button id="themeBtn" class="btn small ghost" type="button">🌙</button>
+        <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button id="themeBtn" class="btn small ghost" type="button" aria-label="Toggle theme">🌙</button>
       </nav>
     </div>
   </header>
@@ -32,7 +33,7 @@
       <h1>Machine Learning • Business Intelligence • Cloud Analytics</h1>
       <p class="tagline">6+ years turning complex data into actionable insights with Python, SQL, Power BI, and AWS.</p>
 
-      <div class="stack">
+      <div class="stack" aria-label="Key skills">
         <span class="chip">Python</span><span class="chip">SQL</span>
         <span class="chip">Power BI</span><span class="chip">TensorFlow</span>
         <span class="chip">AWS SageMaker</span><span class="chip">D3.js</span>
@@ -40,9 +41,9 @@
 
       <div class="cta">
         <a class="btn" href="mailto:saleh.gannon.ds@gmail.com">Contact Me</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/abu-saleh-117b6a1ba/" target="_blank">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/abusaleh002" target="_blank">GitHub</a>
-        <a class="btn ghost" href="resume.pdf" target="_blank">Download Resume</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/abu-saleh-117b6a1ba/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/abusaleh002" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
       </div>
     </div>
   </div>
@@ -57,36 +58,45 @@
     <div class="grid">
       <!-- Project 1 -->
       <article class="card">
-        <div class="thumb"><span>Forecasting • ML • AWS</span></div>
+        <figure class="thumb">
+          <img src="img/forecasting.png" alt="Forecast vs actual graph and AWS SageMaker pipeline" loading="lazy" />
+          <figcaption>Forecasting • ML • AWS</figcaption>
+        </figure>
         <div class="card-body">
-          <h3>AI-Driven Sales Forecasting (Python, TensorFlow, AWS SageMaker)</h3>
-          <p>Improved retail demand forecast accuracy by <strong>30%</strong> with LSTM, GRU, ARIMA, and XGBoost. Deployed on <strong>AWS SageMaker</strong> with automated retraining.</p>
+          <h3>AI‑Driven Sales Forecasting (Python, TensorFlow, AWS SageMaker)</h3>
+          <p>Improved retail demand forecast accuracy by <strong>30%</strong> using LSTM, GRU, ARIMA, and XGBoost. Deployed production pipeline on <strong>AWS SageMaker</strong> with automated retraining.</p>
           <div class="card-links">
-            <a class="btn small" href="https://github.com/abusaleh002/Ai-Retail-Sales-Forecasting" target="_blank">GitHub</a>
+            <a class="btn small" href="https://github.com/abusaleh002/Ai-Retail-Sales-Forecasting" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </article>
 
       <!-- Project 2 -->
       <article class="card">
-        <div class="thumb"><span>BI • KPIs • DAX</span></div>
+        <figure class="thumb">
+          <img src="img/powerbi.png" alt="Power BI dashboard with regional sales and KPI tiles" loading="lazy" />
+          <figcaption>BI • KPIs • DAX</figcaption>
+        </figure>
         <div class="card-body">
           <h3>Retail Sales Dashboard (Power BI, DAX, Excel)</h3>
           <p>Built an interactive <strong>Power BI</strong> dashboard analyzing 2 years of sales with KPIs (Gross Profit, Net Margin, Sales Trends). Helped managers optimize inventory and marketing.</p>
           <div class="card-links">
-            <a class="btn small" href="https://github.com/abusaleh002/Power-BI-Retail-Sales-Dashboard" target="_blank">GitHub</a>
+            <a class="btn small" href="https://github.com/abusaleh002/Power-BI-Retail-Sales-Dashboard" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </article>
 
       <!-- Project 3 -->
       <article class="card">
-        <div class="thumb"><span>D3.js • UX</span></div>
+        <figure class="thumb">
+          <img src="img/d3.png" alt="Interactive D3.js charts (scatter, histogram, pie) with filters" loading="lazy" />
+          <figcaption>D3.js • UX</figcaption>
+        </figure>
         <div class="card-body">
           <h3>Interactive Data Visualization (D3.js, JavaScript)</h3>
-          <p>Responsive multi-page dashboard with scatter plots, histograms, pie and stacked bar charts; enabled real-time exploration across datasets.</p>
+          <p>Responsive multi‑page dashboard with scatter, histogram, pie and stacked bar charts; enabled real‑time exploration across datasets.</p>
           <div class="card-links">
-            <a class="btn small" href="https://abusaleh002.github.io/Data-Visualization/" target="_blank">Live Demo</a>
+            <a class="btn small" href="https://abusaleh002.github.io/Data-Visualization/" target="_blank" rel="noopener">Live Demo</a>
           </div>
         </div>
       </article>
@@ -97,7 +107,7 @@
   <section id="about" class="container">
     <div class="section-head"><h2>About</h2></div>
     <div class="about">
-      <p>I’m a <strong>Data Scientist & Analyst</strong> with <strong>6+ years</strong> across system engineering, cloud platforms, and data-driven applications. Skilled in <strong>Python, SQL, Power BI, AWS</strong>, and ML frameworks (LSTM, GRU, XGBoost, ARIMA), I build predictive models, dashboards, and cloud pipelines that turn data into decisions.</p>
+      <p>I’m a <strong>Data Scientist & Analyst</strong> with <strong>6+ years</strong> across system engineering, cloud platforms, and data‑driven applications. Skilled in <strong>Python, SQL, Power BI, AWS</strong>, and ML frameworks (LSTM, GRU, XGBoost, ARIMA), I build predictive models, dashboards, and cloud pipelines that turn data into decisions.</p>
       <p>Open to opportunities in <em>Data Science, Data Analysis, Business Intelligence, and Cloud Analytics</em>.</p>
     </div>
   </section>
