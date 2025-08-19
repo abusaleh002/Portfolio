@@ -3,128 +3,128 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abu Saleh — Data Science Portfolio</title>
-  <meta name="description" content="Portfolio of Abu Saleh — Data Scientist & Data Analyst. Python, SQL, Power BI, AWS, D3.js." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>Abu Saleh • Data Scientist & Analyst</title>
+  <meta name="description" content="Abu Saleh — Data Scientist & Analyst. Machine Learning • Business Intelligence • Cloud Analytics." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-wrap">
       <div class="brand">
-        <div class="avatar" aria-hidden="true">AS</div>
-        <div class="title">
-          <h1>Abu Saleh</h1>
-          <p>Data Scientist · Data Analyst · AI/ML · Cloud</p>
-        </div>
+        <span class="dot"></span>
+        <span>Abu&nbsp;Saleh</span>
       </div>
-      <nav class="links" aria-label="Primary">
-        <a class="btn" href="mailto:saleh.gannon.ds@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/abu-saleh-117b6a1ba/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/abusaleh002?tab=repositories" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="Abu_Saleh_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <button id="themeBtn" class="btn small ghost" type="button">🌙</button>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Featured Projects -->
-    <section class="section" id="projects">
-      <h2>Featured Projects</h2>
-      <p>Selected work across forecasting, business intelligence, and interactive visualization.</p>
+  <!-- HERO -->
+  <div class="container hero">
+    <div class="hero-card">
+      <span class="kicker">Data Scientist & Analyst</span>
+      <h1>Machine Learning • Business Intelligence • Cloud Analytics</h1>
+      <p class="tagline">6+ years turning complex data into actionable insights with Python, SQL, Power BI, and AWS.</p>
 
-      <div class="grid">
-        <!-- Project 1 -->
-        <article class="card">
-          <img src="assets/images/project_1.png" alt="Thumbnail for AI-Driven Sales Forecasting" />
-          <div class="body">
-            <h3>AI-Driven Sales Forecasting (Machine Learning)</h3>
-            <div class="meta">
-              <span class="chip">Python</span>
-              <span class="chip">AWS SageMaker</span>
-              <span class="chip">LSTM</span>
-              <span class="chip">XGBoost</span>
-            </div>
-            <p>Built and deployed an ML pipeline for retail demand. Engineered time-series features and compared LSTM, GRU, ARIMA/SARIMA, and XGBoost — improving accuracy by <strong>30%</strong>. Deployed on SageMaker with automated retraining.</p>
-            <p><a href="https://github.com/abusaleh002/Ai-Retail-Sales-Forecasting" target="_blank" rel="noopener">View Code</a></p>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="card">
-          <img src="assets/images/project_2.png" alt="Thumbnail for Power BI Retail Sales Dashboard" />
-          <div class="body">
-            <h3>Retail Sales Performance Dashboard</h3>
-            <div class="meta">
-              <span class="chip">Power BI</span>
-              <span class="chip">DAX</span>
-              <span class="chip">Excel</span>
-            </div>
-            <p>Interactive dashboard analyzing two years of sales by region and category with KPI tracking and seasonal trends for better inventory decisions.</p>
-            <p><a href="https://github.com/abusaleh002/Power-BI-Retail-Sales-Dashboard" target="_blank" rel="noopener">View Project</a></p>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="card">
-          <img src="assets/images/project_3.png" alt="Thumbnail for D3.js Interactive Visualization" />
-          <div class="body">
-            <h3>Interactive Data Visualization</h3>
-            <div class="meta">
-              <span class="chip">D3.js</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Responsive</span>
-            </div>
-            <p>Multi-page D3.js dashboard with interactive filters and charts (scatter, histogram, pie, stacked bars). Hosted on GitHub Pages.</p>
-            <p><a href="https://abusaleh002.github.io/Data-Visualization/" target="_blank" rel="noopener">Live Demo</a></p>
-          </div>
-        </article>
+      <div class="stack">
+        <span class="chip">Python</span><span class="chip">SQL</span>
+        <span class="chip">Power BI</span><span class="chip">TensorFlow</span>
+        <span class="chip">AWS SageMaker</span><span class="chip">D3.js</span>
       </div>
-    </section>
 
-    <!-- More Work -->
-    <section class="section" id="more">
-      <h2>More Work</h2>
-      <p>Additional projects and code are available on GitHub.</p>
-
-      <div class="grid">
-        <article class="card">
-          <img src="assets/images/project_1.png" alt="EDA thumbnail" />
-          <div class="body">
-            <h3>Data Cleaning & EDA</h3>
-            <div class="meta">
-              <span class="chip">Pandas</span>
-              <span class="chip">Visualization</span>
-            </div>
-            <p>End-to-end notebook showing raw-to-clean transformation, profiling, feature insights, and visuals.</p>
-            <p><a href="https://github.com/abusaleh002?tab=repositories" target="_blank" rel="noopener">Browse Repos</a></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/project_2.png" alt="SQL case study thumbnail" />
-          <div class="body">
-            <h3>SQL Case Study</h3>
-            <div class="meta">
-              <span class="chip">SQL</span>
-              <span class="chip">Window Functions</span>
-            </div>
-            <p>Cohorts, retention, and rolling metrics solved via complex SQL with clean, well-commented queries.</p>
-            <p><a href="https://github.com/abusaleh002?tab=repositories" target="_blank" rel="noopener">Browse Repos</a></p>
-          </div>
-        </article>
+      <div class="cta">
+        <a class="btn" href="mailto:saleh.gannon.ds@gmail.com">Contact Me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/abu-saleh-117b6a1ba/" target="_blank">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/abusaleh002" target="_blank">GitHub</a>
+        <a class="btn ghost" href="resume.pdf" target="_blank">Download Resume</a>
       </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-      <h2>About</h2>
-      <p>Data Scientist & Data Analyst skilled in Python, SQL, Power BI, TensorFlow, and AWS. I build predictive models, dashboards, and cloud pipelines that turn data into decisions. Always open to collaborations and new opportunities.</p>
-    </section>
-
-    <footer class="footer">
-      © 2025 Abu Saleh — Built with HTML/CSS. Hosted on GitHub Pages.
-    </footer>
+    </div>
   </div>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <div class="section-head">
+      <h2>Featured Projects</h2>
+      <span class="pill">More work coming soon</span>
+    </div>
+
+    <div class="grid">
+      <!-- Project 1 -->
+      <article class="card">
+        <div class="thumb"><span>Forecasting • ML • AWS</span></div>
+        <div class="card-body">
+          <h3>AI-Driven Sales Forecasting (Python, TensorFlow, AWS SageMaker)</h3>
+          <p>Improved retail demand forecast accuracy by <strong>30%</strong> with LSTM, GRU, ARIMA, and XGBoost. Deployed on <strong>AWS SageMaker</strong> with automated retraining.</p>
+          <div class="card-links">
+            <a class="btn small" href="https://github.com/abusaleh002/Ai-Retail-Sales-Forecasting" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <div class="thumb"><span>BI • KPIs • DAX</span></div>
+        <div class="card-body">
+          <h3>Retail Sales Dashboard (Power BI, DAX, Excel)</h3>
+          <p>Built an interactive <strong>Power BI</strong> dashboard analyzing 2 years of sales with KPIs (Gross Profit, Net Margin, Sales Trends). Helped managers optimize inventory and marketing.</p>
+          <div class="card-links">
+            <a class="btn small" href="https://github.com/abusaleh002/Power-BI-Retail-Sales-Dashboard" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <div class="thumb"><span>D3.js • UX</span></div>
+        <div class="card-body">
+          <h3>Interactive Data Visualization (D3.js, JavaScript)</h3>
+          <p>Responsive multi-page dashboard with scatter plots, histograms, pie and stacked bar charts; enabled real-time exploration across datasets.</p>
+          <div class="card-links">
+            <a class="btn small" href="https://abusaleh002.github.io/Data-Visualization/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <div class="section-head"><h2>About</h2></div>
+    <div class="about">
+      <p>I’m a <strong>Data Scientist & Analyst</strong> with <strong>6+ years</strong> across system engineering, cloud platforms, and data-driven applications. Skilled in <strong>Python, SQL, Power BI, AWS</strong>, and ML frameworks (LSTM, GRU, XGBoost, ARIMA), I build predictive models, dashboards, and cloud pipelines that turn data into decisions.</p>
+      <p>Open to opportunities in <em>Data Science, Data Analysis, Business Intelligence, and Cloud Analytics</em>.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="muted">© <span id="y"></span> Abu Saleh — Built with HTML & CSS</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const btn = document.getElementById('themeBtn');
+    const LS_KEY = 'pref-theme';
+    const applyTheme = t => document.documentElement.className = t;
+    const saved = localStorage.getItem(LS_KEY);
+    if(saved){ applyTheme(saved); }
+    btn.addEventListener('click', ()=>{
+      const now = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+      applyTheme(now);
+      localStorage.setItem(LS_KEY, now);
+      btn.textContent = now === 'dark' ? '🌙' : '☀️';
+    });
+  </script>
 </body>
+</html>
